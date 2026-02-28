@@ -25,9 +25,13 @@ dependencies:
   fl_chart: ^0.64.0
   flutter_dotenv: ^5.2.1
   intl: ^0.18.1
-  google_generative_ai: ^0.2.0
+  google_generative_ai: ^0.4.7
   iconsax: ^0.0.8
   image_picker: ^1.1.2
+  image: ^4.2.0
+  path_provider: ^2.1.4
+  timezone: ^0.9.4
+  uuid: ^4.5.1
   # speech_to_text: ^7.0.0
   firebase_storage: ^12.4.6
   firebase_core: ^3.13.1
@@ -37,6 +41,12 @@ dependencies:
   share_plus: ^11.0.0
   syncfusion_flutter_charts: ^29.1.38
   curved_navigation_bar: ^1.0.6
+  flutter_local_notifications: ^17.0.0
+  permission_handler: ^11.2.0
+  shared_preferences: ^2.2.2
+  workmanager: ^0.5.2
+  device_info_plus: ^11.3.0
+  file_picker: ^8.3.2
   
 
 dev_dependencies:
@@ -44,6 +54,15 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^3.0.0
+  msix: ^3.16.12
+
+msix_config:
+  display_name: Chat App
+  publisher_display_name: App Tech
+  identity_name: com.example.chatapp
+  msix_version: 1.0.0.0
+  logo_path: D:\productionapp\chatapp\web\favicon.png
+  capabilities: internetClient, location, microphone, webcam  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
