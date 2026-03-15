@@ -176,6 +176,9 @@ class NotificationService {
       iOS: iosDetails,
     );
 
+    // Keep this as a daily repeating schedule so reminders continue even if the
+    // app is not reopened every day. If the user already logged today (or time
+    // has passed), first trigger starts tomorrow.
     await _notifications.zonedSchedule(
       _dailyReminderNotificationId,
       'Daily Transaction Reminder',
@@ -185,6 +188,7 @@ class NotificationService {
       androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
       uiLocalNotificationDateInterpretation:
           UILocalNotificationDateInterpretation.absoluteTime,
+      matchDateTimeComponents: DateTimeComponents.time,
     );
   }
 

@@ -57,10 +57,6 @@ class _AccountScreenState extends State<AccountScreen> {
       appBar: AppBar(
         title: const Text('Account'),
         actions: [
-          IconButton(
-            icon: const Icon(Icons.notifications_outlined),
-            onPressed: () {},
-          ),
           PopupMenuButton(
             icon: const Icon(Icons.more_vert),
             itemBuilder: (context) => [
@@ -373,6 +369,11 @@ class _AccountScreenState extends State<AccountScreen> {
                     const Spacer(),
                     const Icon(Icons.chevron_right, color: AppTheme.textSecondary),
                   ],
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  'Manage all reminder settings from this section.',
+                  style: Theme.of(context).textTheme.bodySmall,
                 ),
                 const SizedBox(height: 16),
                 _buildNotificationItem(

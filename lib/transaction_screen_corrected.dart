@@ -61,12 +61,6 @@ class _TransactionScreenState extends State<TransactionScreen> {
             icon: const Icon(Icons.filter_list),
             onPressed: _showFilterOptions,
           ),
-          IconButton(
-            icon: const Icon(Icons.notifications_outlined),
-            onPressed: () {
-              // Navigate to notifications settings
-            },
-          ),
         ],
       ),
       body: SingleChildScrollView(
